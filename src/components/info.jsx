@@ -3,7 +3,6 @@ import React from 'react';
 class Info extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {};
         this.withoutIgnored=this.withoutIgnored.bind(this)
     }
     ignore = [
@@ -33,17 +32,18 @@ class Info extends React.Component {
         }
         return ret;
     };
-    arr;
-
     render() {
-        if (this.props.arr) {
+        let target = this.props.arr[this.props.chosenOption[this.props.active]];
+        if (target) {
             return (
                 <ul className={`info`}>
-                    {this.withoutIgnored(Object.keys(this.props.arr),this.ignore).map(item => {
+                    {
+                        this.withoutIgnored(Object.keys(target),this.ignore).map(item => {
                         let str = item.replace('_',' ');
                         let capitalStr = str.charAt(0).toUpperCase() + str.slice(1);
+                        let description =this.props.arr[this.props.chosenOption[this.props.active]][item];
                         return(
-                            <li key = {item}>{capitalStr + ": " + this.props.arr[item]}</li>
+                            <li key = {item}>{capitalStr + ": " + description}</li>
                         )
                     })}
                 </ul>

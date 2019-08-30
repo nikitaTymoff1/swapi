@@ -2,17 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25620421-69e2-4bea-8e4c-9977ff46d508" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/intern.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Carousel.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/helpers/max.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CoolButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CoolButton.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/info.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/info.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CoolButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CoolButton.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/info.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/info.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/list.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +85,10 @@
       <workItem from="1566549505679" duration="3405000" />
       <workItem from="1566889702506" duration="599000" />
       <workItem from="1566890691995" duration="10413000" />
-      <workItem from="1566977551502" duration="11353000" />
+      <workItem from="1566977551502" duration="11581000" />
+      <workItem from="1567063747192" duration="1970000" />
+      <workItem from="1567065843730" duration="5836000" />
+      <workItem from="1567150555813" duration="7304000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1566301319482</created>
