@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Link, Route} from 'react-router-dom';
+import {Route} from 'react-router-dom';
 import {withRouter} from 'react-router'
 import './App.css';
 import Info from "./components/info";
@@ -25,11 +25,11 @@ class App extends React.Component {
 
         this.makeQuery = this.makeQuery.bind(this);
         this.showInfo = this.showInfo.bind(this);
-        // this.toDefault = this.toDefault.bind(this);
         this.makeMeActive = this.makeMeActive.bind(this);
         this.changePage = this.changePage.bind(this);
         this.CarouselContainer = this.CarouselContainer.bind(this);
         this.toDefaultChosenOption = this.toDefaultChosenOption.bind(this);
+        // this.toDefault = this.toDefault.bind(this);
     }
 
     options = ['people', 'planets', 'starships', 'films', 'species', 'vehicles'];
@@ -74,12 +74,12 @@ class App extends React.Component {
                 this.makeQuery(item)
             });
         }
-        let arr = window.location.pathname.split('/');
-        this.page[arr[1]] = parseInt(arr[2]) || 1;
-        this.chosenOption[arr[1]] = arr[3] || -1;
-        this.setState({
-            active: arr[1] || 'people',
-        });
+        // let arr = window.location.pathname.split('/');
+        // this.page[arr[1]] = parseInt(arr[2]) || 1;
+        // this.chosenOption[arr[1]] = arr[3] || -1;
+        // this.setState({
+        //     active: arr[1] || 'people',
+        // });
     }
 
     makeQuery = (target = this.state.active, page = this.page[this.state.active]) => {
@@ -95,7 +95,6 @@ class App extends React.Component {
     };
 
     changePage = (choice) => {
-        console.log(choice);
         if (this.page[this.state.active] < max(this.state[this.state.active]) && choice === 'next') {
             let temp = this.page[this.state.active] + 1;
             this.makeQuery(this.state.active, temp);
